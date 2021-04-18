@@ -59,8 +59,8 @@ def draw_word_distribution(**kwargs):
         y_keys = y_data.keys()
         y_values = y_data.values()
 
-        bars.append([x_keys, x_values, 'train', len(x_keys)])
-        bars.append([y_keys, y_values, 'test', len(y_keys)])
+        bars.append([x_keys, x_values, 'x_data', len(x_keys)])
+        bars.append([y_keys, y_values, 'y_data', len(y_keys)])
 
         for bar in bars:
             plt.bar(bar[0], bar[1])
@@ -85,10 +85,5 @@ with open(_ABS_PATH + '/tmp/papago_data/vocab.target', 'w') as f_target:
     words = _DEFAULT_TOKEN + words
     for w in list(words):
         f_target.write(w + '\n')
-
-
-
-
-
 
 # draw_word_distribution(input_data=x_data, label_data=y_data)  # for 'train/test' data analysis

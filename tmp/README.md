@@ -21,9 +21,19 @@
 ### 2. evaluation metric
 - BLUE, PPL
 
+<img src="https://user-images.githubusercontent.com/45305396/115143832-860c1c80-a084-11eb-81be-1fe4e5c6e92a.PNG"  width="320" height="240"> <img src="https://user-images.githubusercontent.com/45305396/115143834-87d5e000-a084-11eb-9447-669c50223f64.PNG"  width="320" height="240"> <img src="https://user-images.githubusercontent.com/45305396/115143835-89070d00-a084-11eb-95e2-4a357e01585b.PNG"  width="320" height="240">
+
+
 ### 3. experimental results
 - best performance of test set can be reproduced from `tmp/papago_nmt_attention_model/translate.ckpt-9000`
-- BLUE: 88.2 / PPL: 1.36 
+
+Metric | Score | 
+--- | :---: | 
+BLUE | 88.2 |
+PPL  | 1.36  |
+
+
+
 ```wrap
 # Best bleu, step 9000 lr 1 step-time 0.14s wps 26.58K ppl 1.02 gN 1.14 dev ppl 1.36, dev bleu 88.2, test ppl 1.36, test bleu 88.2, Sun Apr 18 18:17:13 2021
 ```

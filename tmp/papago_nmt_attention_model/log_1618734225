@@ -1,0 +1,5 @@
+# log_file=tmp/papago_nmt_attention_model\log_1618734225
+# Start step 0, lr 1, Sun Apr 18 17:23:48 2021
+  step 100 lr 1 step-time 0.14s wps 25.43K ppl 77.24 gN 95.55 bleu 0.00, Sun Apr 18 17:24:03 2021
+  step 200 lr 1 step-time 0.13s wps 27.35K ppl 1.59 gN 3.56 bleu 0.00, Sun Apr 18 17:24:17 2021
+  step 300 lr 1 step-time 0.14s wps 27.25K ppl 1.36 gN 2.30 bleu 0.00, Sun Apr 18 17:24:31 2021

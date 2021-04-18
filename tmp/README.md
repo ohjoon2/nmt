@@ -4,6 +4,8 @@
 2. If you want to reproduce the results, please follow
 ```wrap
 - Import conda env: conda env create -f tmp/papagomt.yaml
+- Locate data: to tmp/papago_data
+- build vocab: python tmp/build_vocab.py
 - Run train script: python -m nmt.nmt --attention=scaled_luong --src=source --tgt=target --vocab_prefix=tmp/papago_data/vocab  --train_prefix=tmp/papago_data/train --dev_prefix=tmp/papago_data/test --test_prefix=tmp/papago_data/test --out_dir=tmp/papago_nmt_attention_model --num_train_steps=12000 --steps_per_stats=100 --num_layers=2 --num_units=128 --dropout=0.2 --metrics=bleu
 ```
 
